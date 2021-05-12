@@ -2,6 +2,6 @@ const textField = document.getElementById("add")
 const submitboton = document.getElementById("boton")
 
 function newElement(){
-    document.getElementById("add").submit();
+    document.getElementById("lista").submit();
 }
 
