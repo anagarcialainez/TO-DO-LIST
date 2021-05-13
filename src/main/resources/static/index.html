@@ -5,17 +5,17 @@
     <title>To-do-List</title>
      <link rel="stylesheet" href="css/style.css">
  </head>
-
   <body>
   <div class="principal">
      <div class="wrap">
-        <form class="formulario" action="">
-            <footer class="center">
-                <input type="text" id="tareaInput" placeholder="I want to...">
-                <input type="button" class="boton" id="btn-agregar" value="+">
-            </footer>
-        </form>
-    </div>
+         <form action="/TodoList" method="post">
+             <label for="tareaInput"></label>
+             <input type="text" value="I want to..." id="tareaInput" name="title"/>
+             <input type="submit" id="btn-agregar" value="+">
+         </form>
+         <h1>To-do-List</h1>
+
+     </div>
 </div>
 
 <div class="tareas">
