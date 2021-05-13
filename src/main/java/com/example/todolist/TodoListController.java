@@ -10,19 +10,21 @@ import java.util.List;
 
 @RestController
 public class TodoListController {
-    private List<Task> TodoList ;
+    private List<Task> TodoList;
 
     public TodoListController() {
         TodoList = new ArrayList<>();
 
     }
 
-@GetMapping ("/TodoList")
-public List<Task> allTodoList() {
-    return TodoList;
-}
-    @PostMapping("/TodoList")
-    public RedirectView addNewTask(Task Task) {
-        TodoList.add(Task);
-        return new RedirectView("/");
+    @GetMapping("/TodoList")
+    public List<Task> allTodoList() {
+        return TodoList;
     }
+
+    @PostMapping("/TodoList")
+    public RedirectView addNewTask(Task task) {
+        TodoList.add(task);
+        return RedirectView("/");
+    }
+}
