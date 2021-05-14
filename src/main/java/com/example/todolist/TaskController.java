@@ -1,4 +1,4 @@
 package com.example.todolist;
 
-public class Task {
+public class TaskController {
 }
