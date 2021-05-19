@@ -1,13 +1,13 @@
-
-POST https://localhost:8080/Task
+POST https://javatodolist.herokuapp.com/Task
 Content-Type: application/x-www-form-urlencoded
 
-Task=sandia
+task=sandia
 
 ###
-
-GET https://localhost:8080/Task
+GET https://javatodolist.herokuapp.com/Task
 Accept: application/json
 
 ###
+
+
 
