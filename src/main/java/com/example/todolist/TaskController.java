@@ -13,10 +13,12 @@ public class TaskController {
     public List<Task> allTasks() {
         return tasks;
     }
+
     @PostMapping("/Task")
     public void addTask(Task task) {
         tasks.add(task);
     }
+
     @DeleteMapping("/Task/{index}")
     void deleteTask(@PathVariable int index) {
         tasks.remove(index);
