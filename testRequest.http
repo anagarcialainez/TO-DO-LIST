@@ -1,6 +1,12 @@
 POST https://javatodolist.herokuapp.com/Task
 Content-Type: application/x-www-form-urlencoded
 
+task=melon
+
+###
+POST https://javatodolist.herokuapp.com/Task
+Content-Type: application/x-www-form-urlencoded
+
 task=sandia
 
 ###
