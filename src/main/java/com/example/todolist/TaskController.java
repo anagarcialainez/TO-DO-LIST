@@ -19,5 +19,8 @@ public class TaskController {
         tasks.add(task);
     }
 
-
+    @DeleteMapping("/Task/{index}")
+    void deleteTask(@PathVariable int index) {
+        tasks.remove(index);
+    }
 }
