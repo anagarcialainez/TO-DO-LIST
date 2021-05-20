@@ -1,6 +1,7 @@
 package com.example.todolist;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,17 +10,18 @@ import java.util.List;
 public class TaskController {
     private final List<Task> tasks = new ArrayList<>();
 
-    @GetMapping("/Task")
+    @GetMapping("/TodoList")
     public List<Task> allTasks() {
         return tasks;
     }
 
-    @PostMapping("/Task")
-    public void addTask(Task task) {
+    @PostMapping("/TodoList")
+    public RedirectView addTask(Task task) {
         tasks.add(task);
+        return new RedirectView("/");
     }
 
-    @DeleteMapping("/Task/{index}")
+    @DeleteMapping("/TodoList/{index}")
     void deleteTask(@PathVariable int index) {
         tasks.remove(index);
     }
