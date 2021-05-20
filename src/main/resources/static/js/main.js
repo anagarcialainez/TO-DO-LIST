@@ -1,6 +1,6 @@
 const tasksSection = document.querySelector("#tasks-section");
 
-function addTasks(task) {
+function addTasks(tasks) {
     tasksSection.innerHTML = "";
     tasks.forEach((task, position) => {
         const htmlElement = document.createElement("div");
