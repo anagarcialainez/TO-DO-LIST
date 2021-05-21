@@ -8,7 +8,7 @@ function addTasks(tasks) {
             <div 
                 class="close-button" 
                 onclick="fetch(\`/TodoList/${position}\`, { method: 'DELETE'}).then(reloadTasks)">x</div>
-            <p class="title">${task.title}</p>
+            <p class="title">${task.task}</p>
         </div>`;
         tasksSection.appendChild(htmlElement)
     })
