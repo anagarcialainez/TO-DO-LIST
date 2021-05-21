@@ -2,6 +2,8 @@ nav{
     background: orange;
     height: 15vh;
     width:100%;
-
+    box-shadow: 0 10px 6px #999999;
+    margin-bottom: 50px;
 }
+
 
