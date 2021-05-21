@@ -1,16 +1,16 @@
-POST https://javatodolist.herokuapp.com/Task
+POST https://javatodolist.herokuapp.com/TodoList
 Content-Type: application/x-www-form-urlencoded
 
 task=melon
 
 ###
-POST https://javatodolist.herokuapp.com/Task
+POST https://javatodolist.herokuapp.com/TodoList
 Content-Type: application/x-www-form-urlencoded
 
 task=sandia
 
 ###
-GET https://javatodolist.herokuapp.com/Task
+GET https://javatodolist.herokuapp.com/TodoList
 Accept: application/json
 
 ###
