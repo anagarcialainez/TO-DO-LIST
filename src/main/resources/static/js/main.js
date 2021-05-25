@@ -7,7 +7,7 @@ function addTasks(tasks) {
         htmlElement.innerHTML = `<div class="task">
             <div 
                 class="close-button" 
-                onclick="fetch(\`/TodoList/${position}\`, { method: 'DELETE'}).then(reloadTasks)">x</div>
+                onclick="fetch(\`/TodoList/${position}\`, { method: 'DELETE'}).then(reloadTasks)"></div>
             <p class="title">${task.task}</p>
         </div>`;
         tasksSection.appendChild(htmlElement)
