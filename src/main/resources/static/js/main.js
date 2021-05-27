@@ -21,8 +21,8 @@ let reloadTasks = () => {
 };
 
 document.addEventListener("DOMContentLoaded", reloadTasks)
-
-
+const icon = document.getElementById("iconrefresh");
+icon.addEventListener("click", reloadTasks)
 
 
 
